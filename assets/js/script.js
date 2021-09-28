@@ -1,7 +1,7 @@
 //Display current Day
-var currentDay = document.querySelector("#current-day")
+var currentDay = $("#current-day")
 var timeNow = moment().format("dddd, MMMM Do YYYY")
-currentDay.textContent(timeNow)
+currentDay.text(timeNow)
 
 //save button to localStorage text for every hour
 $(".saveBtn").on("click", function(){
